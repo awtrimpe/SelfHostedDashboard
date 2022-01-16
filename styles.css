@@ -1,0 +1,174 @@
+:root {
+    --darkBlue: #383443;
+    --lightGray: #9699A8;
+    --orange: #FF8F00;
+    --red: #FC570F;
+    --darkGray: #807B78;
+    --brown: #8E633A;
+    --lightBlue: #5D4F5E;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./fonts/Roboto/Roboto-Regular.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(./fonts/Roboto/Roboto-Bold.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: RobotoLight;
+	src: url(./fonts/Roboto/Roboto-Light.ttf) format("truetype")
+}
+
+@font-face {
+	font-family: RobotoThin;
+	src: url(./fonts/Roboto/Roboto-Thin.ttf) format("truetype")
+}
+
+/**
+-----------------
+ HTML Tag Styling
+-----------------
+**/
+
+html {
+    height: 100%;
+}
+
+body {
+    color: var(--darkBlue);
+    font-family: Roboto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2em 0;
+}
+
+/**
+-----------------
+ Classes
+-----------------
+**/
+
+.card-category {
+    margin: 3em 1em;
+}
+
+.card-category > .title {
+    font-size: 25px;
+    padding: 1em 0;
+    display: block;
+    font-family: RobotoBold;
+    color: var(--red);
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 1em;
+    padding: 1em;
+    width: 25%;
+    max-width: 100%;
+    text-decoration: none;
+    background-color: var(--lightGray);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    background-color: var(--brown);
+}
+
+.card:hover img {
+    transform: translateX(5px);
+}
+
+.card img {
+    transition: transform 500ms ease-in-out;
+    width: 100%;
+}
+
+.card .image-container {
+    max-width: 25%;
+}
+
+.card .card-info {
+    padding: 2em;
+    width: 75%;
+    color: white;
+}
+
+.card .card-info > .title {
+    display: block;
+    font-size: 20px;
+    padding: 1em 0;
+    height: 2.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+}
+
+.card .card-info .location {
+    font-family: RobotoLight;
+}
+
+/**
+-----------------
+ Dark Theme
+-----------------
+**/
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--lightGray);
+        background-color: var(--darkBlue);
+    }
+
+    .card {
+        color: var(--orange);
+        background-color: var(--lightBlue);
+    }
+
+    .card:hover {
+        background-color: var(--darkGray);
+    }
+
+    .card .card-info .location {
+        color: var(--lightGray)
+    }
+
+    .card:hover .card-info  .location {
+        color: white;
+    }
+}
+
+/**
+-----------------
+ Mobile
+-----------------
+**/
+
+@media only screen and (max-width: 767px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .cards .card {
+        margin: 1em;
+        width: auto;
+    }
+
+    .card img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "name": "Trimpe Home Apps",
+    "categories": [
+        {
+            "name": "Multimedia",
+            "apps": [
+                {
+                    "image": "Gossa_logo.png",
+                    "link": "http://10.0.0.13:8001",
+                    "location": "Mac",
+                    "name": "Gossa"
+                },
+                {
+                    "image": "Plex_logo.png",
+                    "link": "http://10.0.0.13:32400",
+                    "location": "Mac",
+                    "name": "Plex"
+                }
+            ]
+        },
+        {
+            "name": "Smart Home",
+            "apps": [
+                {
+                    "image": "AdGuard_logo.png",
+                    "link": "http://10.0.0.2:3001",
+                    "location": "Pi",
+                    "name": "AdGuard"
+                },
+                {
+                    "image": "Home_Assistant_logo.png",
+                    "link": "http://10.0.0.13:8123",
+                    "location": "Mac",
+                    "name": "Home Assistant"
+                }
+            ]
+        }
+    ]
+}
