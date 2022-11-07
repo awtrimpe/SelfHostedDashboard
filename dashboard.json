@@ -6,13 +6,13 @@
             "apps": [
                 {
                     "image": "Gossa_logo.png",
-                    "link": "http://10.0.0.13:8001",
+                    "link": "http://192.168.86.2:8001",
                     "location": "Mac",
                     "name": "Gossa"
                 },
                 {
                     "image": "Plex_logo.png",
-                    "link": "http://10.0.0.13:32400",
+                    "link": "http://192.168.86.2:32400",
                     "location": "Mac",
                     "name": "Plex"
                 }
@@ -23,13 +23,13 @@
             "apps": [
                 {
                     "image": "AdGuard_logo.png",
-                    "link": "http://10.0.0.2:3001",
+                    "link": "http://192.168.86.3:3001",
                     "location": "Pi",
                     "name": "AdGuard"
                 },
                 {
                     "image": "Home_Assistant_logo.png",
-                    "link": "http://10.0.0.13:8123",
+                    "link": "http://192.168.86.2:8123",
                     "location": "Mac",
                     "name": "Home Assistant"
                 }
