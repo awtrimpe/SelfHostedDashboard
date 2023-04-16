@@ -2,6 +2,17 @@
   "name": "Trimpe Home Apps",
   "categories": [
     {
+      "name": "Clients",
+      "apps": [
+        {
+          "image": "qBittorrent_logo.svg",
+          "link": "http://192.168.86.2:8080",
+          "location": "Mac",
+          "name": "qBittorrent"
+        }
+      ]
+    },
+    {
       "name": "Multimedia",
       "apps": [
         {
