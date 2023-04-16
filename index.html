@@ -2,37 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>{{ name }}</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./images/icon.ico" />
+	<meta charset="UTF-8">
+	<title>{{ name }}</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="./images/icon.ico" />
 </head>
 
 <body>
-    <header></header>
-    {{#each categories}}
-    <div class="card-category">
-        <span class="title">{{ this.name }}</span>
-        <div class="cards">
-            {{#each this.apps}}
-            <a class="card" href="{{ this.link }}" target="_blank">
-                <span class="image-container">
-                    <img src="./images/{{ this.image }}" />
-                </span>
-                <span class="card-info">
-                    <span class="title">{{ this.name }}</span>
-                    <span class="location">{{ this.location }}</span>
-                </span>
-            </a>
-            {{/each}}
-        </div>
-    </div>
-    {{/each}}
+	<header></header>
+	{{#each categories}}
+		<div class="card-category">
+			<span class="title">{{ this.name }}</span>
+			<div class="cards">
+				{{#each this.apps}}
+					<a class="card" href="{{ this.link }}" target="_blank">
+						<span class="image-container">
+							<img src="./images/{{ this.image }}" />
+						</span>
+						<span class="card-info">
+							<span class="title">{{ this.name }}</span>
+							<span class="location">{{ this.location }}</span>
+						</span>
+					</a>
+				{{/each}}
+			</div>
+		</div>
+	{{/each}}
 
-    <footer>
-        <span>&copy; Alex Trimpe 2022</span>
-    </footer>
+	<footer>
+		<span>&copy; Alex Trimpe 2022</span>
+	</footer>
 </body>
 
 </html>

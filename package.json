@@ -5,11 +5,9 @@
   "scripts": {
     "start-node": "node ./app.js",
     "precommit-msg": "echo 'Running pre-commit formatter...' && exit 0",
-    "prettier": "npm run prettier-json && npm run prettier-md && npm run prettier-ts && npm run prettier-yaml",
+    "prettier": "npm run prettier-json && npm run prettier-md",
     "prettier-json": "prettier --write **.json",
     "prettier-md": "prettier --write **.md",
-    "prettier-ts": "prettier --write **.ts",
-    "prettier-yaml": "prettier --write **.yaml",
     "beautify": "js-beautify --end-with-newline --indent-size=1 --indent-with-tabs '**/*.{css,js}' && npm run beautify-html",
     "beautify-html": "html-beautify -r --end-with-newline --wrap-line-length=120  --indent-with-tabs '**/*.html'",
     "git-add": "git add ."
