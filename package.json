@@ -1,33 +1,31 @@
 {
-    "name": "self-hosted-dashboard",
-    "version": "1.0.0",
-    "license": "MIT",
-    "scripts": {
-        "start-node": "node ./app.js",
-        "precommit-msg": "echo 'Running pre-commit formatter...' && exit 0",
-        "prettier": "npm run prettier-json && npm run prettier-md && npm run prettier-ts && npm run prettier-yaml",
-        "prettier-json": "prettier --write **.json",
-        "prettier-md": "prettier --write **.md",
-        "prettier-ts": "prettier --write **.ts",
-        "prettier-yaml": "prettier --write **.yaml",
-        "beautify": "js-beautify --end-with-newline --indent-size=1 --indent-with-tabs '**/*.{css,js}' && npm run beautify-html",
-        "beautify-html": "html-beautify -r --end-with-newline --wrap-line-length=120  --indent-with-tabs '**/*.html'",
-        "git-add": "git add ."
-    },
-    "pre-commit": [
-        "precommit-msg",
-        "prettier",
-        "beautify",
-        "git-add"
-    ],
-    "private": true,
-    "dependencies": {
-        "express": "^4.17.2",
-        "handlebars": "^4.7.7"
-    },
-    "devDependencies": {
-        "js-beautify": "^1.14.0",
-        "pre-commit": "^1.2.2",
-        "prettier": "^2.5.1"
-    }
+  "name": "self-hosted-dashboard",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start-node": "node ./app.js",
+    "precommit-msg": "echo 'Running pre-commit formatter...' && exit 0",
+    "prettier": "npm run prettier-json && npm run prettier-md",
+    "prettier-json": "prettier --write **.json",
+    "prettier-md": "prettier --write **.md",
+    "beautify": "js-beautify --end-with-newline --indent-size=1 --indent-with-tabs '**/*.{css,js}' && npm run beautify-html",
+    "beautify-html": "html-beautify -r --end-with-newline --wrap-line-length=120  --indent-with-tabs '**/*.html'",
+    "git-add": "git add ."
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "prettier",
+    "beautify",
+    "git-add"
+  ],
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.2",
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "js-beautify": "^1.14.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1"
+  }
 }

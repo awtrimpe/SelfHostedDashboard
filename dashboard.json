@@ -1,39 +1,39 @@
 {
-    "name": "Trimpe Home Apps",
-    "categories": [
+  "name": "Trimpe Home Apps",
+  "categories": [
+    {
+      "name": "Multimedia",
+      "apps": [
         {
-            "name": "Multimedia",
-            "apps": [
-                {
-                    "image": "Gossa_logo.png",
-                    "link": "http://192.168.86.2:8001",
-                    "location": "Mac",
-                    "name": "Gossa"
-                },
-                {
-                    "image": "Plex_logo.png",
-                    "link": "http://192.168.86.2:32400",
-                    "location": "Mac",
-                    "name": "Plex"
-                }
-            ]
+          "image": "Gossa_logo.png",
+          "link": "http://192.168.86.2:8001",
+          "location": "Mac",
+          "name": "Gossa"
         },
         {
-            "name": "Smart Home",
-            "apps": [
-                {
-                    "image": "AdGuard_logo.png",
-                    "link": "http://192.168.86.3:3001",
-                    "location": "Pi",
-                    "name": "AdGuard"
-                },
-                {
-                    "image": "Home_Assistant_logo.png",
-                    "link": "http://192.168.86.2:8123",
-                    "location": "Mac",
-                    "name": "Home Assistant"
-                }
-            ]
+          "image": "Plex_logo.png",
+          "link": "http://192.168.86.2:32400",
+          "location": "Mac",
+          "name": "Plex"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Smart Home",
+      "apps": [
+        {
+          "image": "AdGuard_logo.png",
+          "link": "http://192.168.86.3:3001",
+          "location": "Pi",
+          "name": "AdGuard"
+        },
+        {
+          "image": "Home_Assistant_logo.png",
+          "link": "http://192.168.86.2:8123",
+          "location": "Mac",
+          "name": "Home Assistant"
+        }
+      ]
+    }
+  ]
 }
