@@ -2,53 +2,25 @@
   "name": "Trimpe Home Apps",
   "categories": [
     {
-      "name": "Clients",
-      "apps": [
-        {
-          "image": "qBittorrent_logo.svg",
-          "link": "http://192.168.86.2:8080",
-          "location": "Mac",
-          "name": "qBittorrent"
-        }
-      ]
-    },
-    {
       "name": "Multimedia",
       "apps": [
         {
           "image": "Gossa_logo.png",
-          "link": "http://192.168.86.2:8001",
-          "location": "Mac",
+          "link": "http://192.168.86.231:8001",
+          "location": "Desktop",
           "name": "Gossa"
         },
         {
+          "image": "Jellyfin_logo.png",
+          "link": "http://192.168.86.231:8096",
+          "location": "Desktop",
+          "name": "Jellyfin"
+        },
+        {
           "image": "Plex_logo.png",
-          "link": "http://192.168.86.2:32400",
-          "location": "Mac",
+          "link": "http://192.168.86.231:32400",
+          "location": "Desktop",
           "name": "Plex"
-        },
-        {
-          "image": "Sonarr_logo.png",
-          "link": "http://192.168.86.2:8989",
-          "location": "Mac",
-          "name": "Sonarr"
-        }
-      ]
-    },
-    {
-      "name": "Smart Home",
-      "apps": [
-        {
-          "image": "AdGuard_logo.png",
-          "link": "http://192.168.86.3:3001",
-          "location": "Pi",
-          "name": "AdGuard"
-        },
-        {
-          "image": "Home_Assistant_logo.png",
-          "link": "http://192.168.86.2:8123",
-          "location": "Mac",
-          "name": "Home Assistant"
         }
       ]
     }
